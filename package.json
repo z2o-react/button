@@ -2,7 +2,8 @@
   "name": "button",
   "version": "1.0.0",
   "description": "React Button",
-  "main": "index.js",
+  "main": "lib/index",
+  "module": "es/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint-staged": "lint-staged"
@@ -24,8 +25,10 @@
     "@types/react-dom": "^16.8.4",
     "lint-staged": "^8.2.1",
     "pre-commit": "^1.2.2",
+    "prettier": "^1.18.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "typescript": "^3.5.2"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -35,6 +38,9 @@
     "lint-staged"
   ],
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": []
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

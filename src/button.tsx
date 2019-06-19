@@ -11,7 +11,7 @@ const BLACK_LIST = [
   'htmlType',
   'className',
   'disabled',
-  'onClick'
+  'onClick',
 ]
 
 export interface IButtonProps {
@@ -30,7 +30,7 @@ export default class Button extends React.Component<IButtonProps> {
     prefixCls: 'zero-button',
     className: '',
     style: {},
-    disabled: false
+    disabled: false,
   }
 
   wrapValueBySpan(children: React.ReactNode): React.ReactNode {
@@ -89,16 +89,10 @@ export default class Button extends React.Component<IButtonProps> {
   }
 
   render() {
-    const {
-      disabled,
-      children,
-      prefixCls,
-      className,
-      href,
-    } = this.props
+    const { disabled, children, prefixCls, className, href } = this.props
     const renderName: string = href ? 'renderLink' : 'renderButton'
     const classes: string = classNames(prefixCls, className, {
-      [`${prefixCls}-disabled`]: disabled
+      [`${prefixCls}-disabled`]: disabled,
     })
 
     return this[renderName](classes, this.wrapValueBySpan(children))
