@@ -7,8 +7,8 @@
   "scripts": {
     "build:es": "npm run build:es:types && NODE_ENV=es babel src --out-dir es --copy-files --extensions '.ts,.tsx'",
     "build:js": "npm run build:js:types && babel src --out-dir lib --copy-files --extensions '.ts,.tsx'",
-    "build:es:types": "tsc",
-    "build:js:types": "tsc --declarationDir lib",
+    "build:es:types": "tsc --emitDeclarationOnly",
+    "build:js:types": "tsc --emitDeclarationOnly --declarationDir lib",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint-staged": "lint-staged"
   },
