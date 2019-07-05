@@ -3,6 +3,7 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "declaration": true,
+    "declarationDir": "es",
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "lib": ["dom", "es2018"],
