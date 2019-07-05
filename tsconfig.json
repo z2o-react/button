@@ -1,25 +1,23 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "strict": false,
+    "strict": true,
     "declaration": true,
     "forceConsistentCasingInFileNames": true,
-    "importHelpers": true,
     "jsx": "react",
     "lib": ["dom", "es2018"],
     "module": "es6",
     "moduleResolution": "node",
     "noEmitOnError": true,
-    "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": true, // 若有未使用的局部变量则抛错。
     "outDir": "es",
     "pretty": true,
-    "removeComments": true,
+    "removeComments": true, // 删除所有注释，除了以 /!*开头的版权信息。
     "skipLibCheck": true,
-    "target": "es5"
+    "target": "es5",
+    "experimentalDecorators": true,
+    "suppressImplicitAnyIndexErrors": true // 阻止 --noImplicitAny对缺少索引签名的索引对象报错。查看 issue #1232了解详情。
   },
   "exclude": ["lib", "es", "node_modules", "__tests__"],
   "include": ["src"]
