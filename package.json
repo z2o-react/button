@@ -1,9 +1,13 @@
 {
-  "name": "button",
-  "version": "1.0.0",
+  "name": "@z2o/button",
+  "version": "1.0.0-beta",
   "description": "React Button",
   "main": "lib/index",
   "module": "es/index",
+  "files": [
+    "es",
+    "lib"
+  ],
   "scripts": {
     "build:es": "npm run build:es:types && NODE_ENV=es babel src --out-dir es --copy-files --extensions '.ts,.tsx'",
     "build:js": "npm run build:js:types && babel src --out-dir lib --copy-files --extensions '.ts,.tsx'",
