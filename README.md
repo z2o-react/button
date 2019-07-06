@@ -2,6 +2,10 @@
 
 React Button component
 
+![https://www.npmjs.com/package/@z2o/button](https://img.shields.io/npm/v/@z2o/button.svg)
+![https://www.npmjs.com/package/@z2o/button](https://img.shields.io/npm/dm/@z2o/button.svg)
+![https://github.com/z2o-react/button/blob/master/LICENSE](https://img.shields.io/github/license/z2o-react/button.svg)
+
 
 ## API
 
