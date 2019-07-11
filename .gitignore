@@ -4,6 +4,7 @@ node_modules
 /dist
 /es
 /lib
+package-lock.json
 
 # local env files
 .env.local
