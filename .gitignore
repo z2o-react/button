@@ -1,9 +1,12 @@
 .DS_Store
 node_modules
 
-/dist
-/es
-/lib
+dist
+es
+lib
+storybook
+assets/**/*.css
+build
 package-lock.json
 
 # local env files
