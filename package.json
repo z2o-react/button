@@ -9,7 +9,10 @@
     "lib"
   ],
   "scripts": {
-    "build": "rc-tools run compile --babel-runtime",
+    "start": "rc-tools run storybook",
+    "compile": "rc-tools run compile --babel-runtime",
+    "build": "rc-tools run build",
+    "gh-pages": "rc-tools run gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint-staged": "lint-staged"
   },
@@ -29,7 +32,7 @@
     "@types/lodash.omit": "^4.5.6",
     "@types/react": "^16.8.20",
     "@types/react-dom": "^16.8.4",
-    "@z2o/rc-tools": "^1.0.0-beta.1",
+    "@z2o/rc-tools": "*",
     "lint-staged": "^8.2.1",
     "pre-commit": "^1.2.2",
     "prettier": "^1.18.2",
