@@ -1,3 +1,83 @@
-.zero-button {
-  background-color: red
+.z2o-button {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-family: inherit;
+  color: #333;
+  background: #fff;
+  border: 1px solid #bbb;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  /* type */
+  &-primary {
+    color: #fff;
+    background: #38f;
+    border-color: #38f;
+
+    &__outline {
+      color: #38f;
+      border-color: #38f;
+      background: #fff;
+    }
+  }
+
+  &-danger {
+    color: #fff;
+    background: #f44;
+    border-color: #f44;
+
+    &__outline {
+      color: #f44;
+      border-color: #f44;
+      background: #fff;
+    }
+  }
+
+  &-success {
+    color: #fff;
+    background: #4b0;
+    border-color: #4b0;
+
+    &__outline {
+      color: #4b0;
+      border-color: #4b0;
+      background: #fff;
+    }
+  }
+
+  /* size */
+  &-large {
+    height: 38px;
+    line-height: 36px;
+    padding: 0 23px;
+    font-size: 14px;
+  }
+
+  &-small {
+    height: 26px;
+    line-height: 24px;
+    padding: 0 7px;
+  }
+
+  /* block */
+  &-block {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  /* disabled */
+  &-disabled {
+    color: #bbb;
+    background: #f8f8f8;
+    border-color: #e5e5e5;
+    cursor: not-allowed;
+  }
 }

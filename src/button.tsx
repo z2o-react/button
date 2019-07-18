@@ -6,10 +6,13 @@ const BLACK_LIST = [
   'prefixCls',
   'className',
   'style',
+  'type',
+  'size',
+  'outline',
+  'block',
   'href',
   'target',
   'htmlType',
-  'className',
   'disabled',
   'onClick',
 ]
@@ -17,7 +20,11 @@ const BLACK_LIST = [
 export interface IButtonProps {
   prefixCls?: string
   className?: string
-  style?: object
+  style?: React.CSSProperties
+  type?: 'default' | 'primary' | 'danger' | 'success'
+  size?: 'medium' | 'large' | 'small'
+  outline?: boolean
+  block?: boolean
   href?: string
   target?: string
   disabled?: boolean
@@ -31,6 +38,9 @@ export default class Button extends React.Component<IButtonProps> {
     className: '',
     style: {},
     disabled: false,
+    htmlType: 'button',
+    outline: false,
+    block: false,
   }
 
   wrapValueBySpan(children: React.ReactNode): React.ReactNode {
@@ -89,10 +99,23 @@ export default class Button extends React.Component<IButtonProps> {
   }
 
   render() {
-    const { disabled, children, prefixCls, className, href } = this.props
+    const {
+      className,
+      disabled,
+      children,
+      prefixCls,
+      href,
+      type,
+      size,
+      outline,
+      block,
+    } = this.props
     const renderName: string = href ? 'renderLink' : 'renderButton'
     const classes: string = classNames(prefixCls, className, {
       [`${prefixCls}-disabled`]: disabled,
+      [`${prefixCls}-${type}${outline ? '__outline' : ''}`]: type !== 'default',
+      [`${prefixCls}-${size}`]: size !== 'medium',
+      [`${prefixCls}-block`]: block,
     })
 
     return this[renderName](classes, this.wrapValueBySpan(children))
