@@ -18,7 +18,7 @@ class Test extends React.Component {
         <Button href='https://www.lishuaishuai.com' type='success'>
           success
         </Button>
-        <h3>href target</h3>
+        <h3>target="_blank"</h3>
         <Button target='_blank' href='https://www.lishuaishuai.com'>
           block
         </Button>
