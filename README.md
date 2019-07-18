@@ -15,7 +15,7 @@ $ npm install @z2o/button
 ## Usage
 
 ```javascript
-import Button from 'rc-select'
+import Button from '@z2o/button'
 
 var c = <Button>default</Button>
 React.render(c, container)
@@ -31,7 +31,7 @@ online example: [https://z2o-react.github.io/button/](https://z2o-react.github.i
 | --- | --- | --- | --- |
 | prefixCls | string | `z2o-button` | 类名前缀 |
 | className | string | - | 为 button 添加额外的类名 |
-| style | Object | {} | 为 button 添加 style |
+| style | Object | - | 为 button 添加 style |
 | type | string | `default` | `primary`、 `danger`、 `success` |
 | size | string | `medium` | `large`、 `small` |
 | block | Boolean | `false` | 是否以块级元素的形式展开 |
