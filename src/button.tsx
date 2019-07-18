@@ -27,7 +27,7 @@ export interface IButtonProps {
 
 export default class Button extends React.Component<IButtonProps> {
   static defaultProps = {
-    prefixCls: 'zero-button',
+    prefixCls: 'z2o-button',
     className: '',
     style: {},
     disabled: false,
