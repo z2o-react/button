@@ -22,25 +22,13 @@ class Test extends React.Component {
         <Button target='_blank' href='https://www.lishuaishuai.com'>
           block
         </Button>
-        <Button
-          target='_blank'
-          href='https://www.lishuaishuai.com'
-          type='primary'
-        >
+        <Button target='_blank' href='https://www.lishuaishuai.com' type='primary'>
           primary
         </Button>
-        <Button
-          target='_blank'
-          href='https://www.lishuaishuai.com'
-          type='danger'
-        >
+        <Button target='_blank' href='https://www.lishuaishuai.com' type='danger'>
           danger
         </Button>
-        <Button
-          target='_blank'
-          href='https://www.lishuaishuai.com'
-          type='success'
-        >
+        <Button target='_blank' href='https://www.lishuaishuai.com' type='success'>
           success
         </Button>
       </div>
