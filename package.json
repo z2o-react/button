@@ -1,6 +1,6 @@
 {
   "name": "@z2o/button",
-  "version": "1.0.0-beta",
+  "version": "1.0.0",
   "description": "React Button",
   "main": "lib/index",
   "module": "es/index",
