@@ -17,7 +17,7 @@ $ npm install @z2o/button
 ```javascript
 import Button from '@z2o/button'
 
-var c = <Button>default</Button>
+const c = <Button>default</Button>
 React.render(c, container)
 ```
 
