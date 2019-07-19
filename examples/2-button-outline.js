@@ -4,17 +4,21 @@ import Button from '../src'
 import '../assets/button.less'
 
 class Test extends React.Component {
+  handleClick = e => {
+    console.log('click', e)
+  }
+
   render() {
     return (
       <div style={{ padding: '20px' }}>
         <h3>outline</h3>
-        <Button type='primary' outline>
+        <Button onClick={this.handleClick} type='primary' outline>
           primary
         </Button>
-        <Button type='danger' outline>
+        <Button onClick={this.handleClick} type='danger' outline>
           danger
         </Button>
-        <Button type='success' outline>
+        <Button onClick={this.handleClick} type='success' outline>
           success
         </Button>
       </div>

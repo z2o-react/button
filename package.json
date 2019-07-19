@@ -21,6 +21,7 @@
     "compile": "rc-tools run compile --babel-runtime",
     "build": "rc-tools run build",
     "gh-pages": "rc-tools run gh-pages",
+    "pub": "rc-tools run pub",
     "lint-staged": "lint-staged"
   },
   "repository": {

@@ -4,31 +4,52 @@ import Button from '../src'
 import '../assets/button.less'
 
 class Test extends React.Component {
+  handleClick = e => {
+    console.log('click', e)
+  }
+
   render() {
     return (
       <div style={{ padding: '20px' }}>
         <h3>href</h3>
-        <Button href='https://www.lishuaishuai.com'>block</Button>
-        <Button href='https://www.lishuaishuai.com' type='primary'>
+        <Button onClick={this.handleClick} href='https://www.lishuaishuai.com'>
+          block
+        </Button>
+        <Button onClick={this.handleClick} href='https://www.lishuaishuai.com' type='primary'>
           primary
         </Button>
-        <Button href='https://www.lishuaishuai.com' type='danger'>
+        <Button onClick={this.handleClick} href='https://www.lishuaishuai.com' type='danger'>
           danger
         </Button>
-        <Button href='https://www.lishuaishuai.com' type='success'>
+        <Button onClick={this.handleClick} href='https://www.lishuaishuai.com' type='success'>
           success
         </Button>
         <h3>target="_blank"</h3>
-        <Button target='_blank' href='https://www.lishuaishuai.com'>
+        <Button onClick={this.handleClick} target='_blank' href='https://www.lishuaishuai.com'>
           block
         </Button>
-        <Button target='_blank' href='https://www.lishuaishuai.com' type='primary'>
+        <Button
+          onClick={this.handleClick}
+          target='_blank'
+          href='https://www.lishuaishuai.com'
+          type='primary'
+        >
           primary
         </Button>
-        <Button target='_blank' href='https://www.lishuaishuai.com' type='danger'>
+        <Button
+          onClick={this.handleClick}
+          target='_blank'
+          href='https://www.lishuaishuai.com'
+          type='danger'
+        >
           danger
         </Button>
-        <Button target='_blank' href='https://www.lishuaishuai.com' type='success'>
+        <Button
+          onClick={this.handleClick}
+          target='_blank'
+          href='https://www.lishuaishuai.com'
+          type='success'
+        >
           success
         </Button>
       </div>

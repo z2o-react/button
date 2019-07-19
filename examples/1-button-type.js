@@ -5,8 +5,9 @@ import '../assets/button.less'
 
 class Test extends React.Component {
   handleClick = e => {
-    console.log(e)
+    console.log('click', e)
   }
+
   render() {
     return (
       <div style={{ padding: '20px' }}>

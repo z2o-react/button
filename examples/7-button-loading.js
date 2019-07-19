@@ -4,31 +4,37 @@ import Button from '../src'
 import '../assets/button.less'
 
 class Test extends React.Component {
+  handleClick = e => {
+    console.log('click', e)
+  }
+
   render() {
     return (
       <div style={{ padding: '20px' }}>
         <h3>loading</h3>
-        <Button loading>default</Button>
-        <Button loading type='primary'>
+        <Button onClick={this.handleClick} loading>
+          default
+        </Button>
+        <Button onClick={this.handleClick} loading type='primary'>
           primary
         </Button>
-        <Button loading type='danger'>
+        <Button onClick={this.handleClick} loading type='danger'>
           danger
         </Button>
-        <Button loading type='success'>
+        <Button onClick={this.handleClick} loading type='success'>
           success
         </Button>
         <h3>outline</h3>
-        <Button outline loading>
+        <Button onClick={this.handleClick} outline loading>
           default
         </Button>
-        <Button outline loading type='primary'>
+        <Button onClick={this.handleClick} outline loading type='primary'>
           primary
         </Button>
-        <Button outline loading type='danger'>
+        <Button onClick={this.handleClick} outline loading type='danger'>
           danger
         </Button>
-        <Button outline loading type='success'>
+        <Button onClick={this.handleClick} outline loading type='success'>
           success
         </Button>
       </div>
