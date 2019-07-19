@@ -6,7 +6,7 @@ import '../assets/button.less'
 class Test extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{ padding: '20px' }}>
         <h3>loading</h3>
         <Button loading>default</Button>
         <Button loading type='primary'>

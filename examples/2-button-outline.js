@@ -6,7 +6,7 @@ import '../assets/button.less'
 class Test extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{ padding: '20px' }}>
         <h3>outline</h3>
         <Button type='primary' outline>
           primary

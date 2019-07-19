@@ -9,7 +9,7 @@ class Test extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div style={{ padding: '20px' }}>
         <h3>type</h3>
         <Button onClick={this.handleClick}>default</Button>
         <Button onClick={this.handleClick} type='primary'>
