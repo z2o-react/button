@@ -37,6 +37,7 @@ export default class Button extends React.Component<IButtonProps> {
   static defaultProps = {
     prefixCls: 'z2o-button',
     className: '',
+    type: 'default',
     size: 'medium',
     disabled: false,
     loading: false,
