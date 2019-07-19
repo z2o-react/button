@@ -2,9 +2,17 @@
   "name": "@z2o/button",
   "version": "1.0.0",
   "description": "React Button",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-button",
+    "button",
+    "@z2o"
+  ],
   "main": "lib/index",
   "module": "es/index",
   "files": [
+    "assets/*.css",
     "es",
     "lib"
   ],
@@ -13,21 +21,19 @@
     "compile": "rc-tools run compile --babel-runtime",
     "build": "rc-tools run build",
     "gh-pages": "rc-tools run gh-pages",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "lint-staged": "lint-staged"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zero-component/button.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "lishuaishuai",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/zero-component/button/issues"
   },
   "homepage": "https://github.com/zero-component/button#readme",
   "devDependencies": {
-    "@babel/plugin-transform-runtime": "^7.5.0",
     "@types/classnames": "^2.2.8",
     "@types/lodash.omit": "^4.5.6",
     "@types/react": "^16.8.20",
