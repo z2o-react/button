@@ -116,11 +116,11 @@ export default class Button extends React.Component<IButtonProps> {
     } = this.props
     const renderName: string = href ? 'renderLink' : 'renderButton'
     const classes: string = classNames(prefixCls, className, {
-      [`${prefixCls}-disabled`]: disabled,
-      [`${prefixCls}-${type}${outline ? '__outline' : ''}`]: type !== 'default',
-      [`${prefixCls}-${size}`]: size !== 'medium',
-      [`${prefixCls}-block`]: block,
-      [`${prefixCls}-loading`]: loading,
+      [`${prefixCls}--disabled`]: disabled,
+      [`${prefixCls}--${type}${outline ? '__outline' : ''}`]: type !== 'default',
+      [`${prefixCls}--${size}`]: size !== 'medium',
+      [`${prefixCls}--block`]: block,
+      [`${prefixCls}--loading`]: loading,
     })
 
     return this[renderName](classes, this.wrapValueBySpan(children))
